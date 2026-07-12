@@ -303,10 +303,10 @@ h1 { font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700
           <div class="mission-title">Next Token Prediction</div>
           <div class="mission-desc">Read each comment carefully — understand what logits, softmax, top-k mean</div>
         </div>
-        <div class="mission-card">
-          <div class="mission-num">Mission 7</div>
-          <div class="mission-title">Test</div>
-          <div class="mission-desc">Try your own prompts. See Top-5 predictions.</div>
+        <div class="mission-card" style="border-color:#FFD700;">
+          <div class="mission-num" style="color:#FFD700;">Mission 7 — TODO</div>
+          <div class="mission-title">Your Own Prompts</div>
+          <div class="mission-desc">Only cell you write — replace 3 variables with your own sentence starters</div>
         </div>
       </div>
 
@@ -324,7 +324,19 @@ h1 { font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700
         <code>values, indices = torch.topk(probs, top_k)</code><br><br>
         The code is already written — run the cell and discuss as a team what each line is doing.
       </div>
-      <label class="check-label" id="l4"><input type="checkbox" id="c4" onchange="tick(4)"> Missions 5–7 done — I can see Top-5 next word predictions</label>
+
+      <div class="info-box" style="border-color:#FFD700; background:rgba(255,215,0,0.04);">
+        <strong style="color:#FFD700;">Mission 7 — You write this part</strong><br><br>
+        In the notebook, find these 3 variables and change all of them:<br><br>
+        <code>my_prompt_1 = "Artificial Intelligence will"</code> &nbsp;← CHANGE THIS<br>
+        <code>my_prompt_2 = "The future of technology"</code> &nbsp;&nbsp;&nbsp;&nbsp;← CHANGE THIS<br>
+        <code>my_prompt_3 = "Samsung engineers are"</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;← CHANGE THIS<br><br>
+        Rules: at least 4 words each. Do not leave the default examples.<br>
+        After running: you see <strong>15 predictions</strong> — 5 per prompt.<br><br>
+        <strong>Discuss with your team:</strong> which prediction surprised you most and why?
+      </div>
+
+      <label class="check-label" id="l4"><input type="checkbox" id="c4" onchange="tick(4)"> Missions 5–7 done — I wrote my own 3 prompts and can see 15 predictions</label>
     </div>
   </div>
 
