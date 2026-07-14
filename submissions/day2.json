@@ -1,0 +1,19 @@
+{
+  "day": 2,
+  "student_name": "Pranavi Sridhar",
+  "github": "Pranavi956",
+  "lab1_scenario": "C",
+  "lab1_prompt": "You are an HR support assistant chatbot for a company's internal new-hire onboarding portal.\n\nAnswer a new campus recruit's question about laptop provisioning clearly and completely, so they know what to expect and what to do next.\n\nContext: The recruit is asking before their official start date. Laptops are typically shipped to the recruit's home address 3–5 business days before the start date or handed out on Day 1 at the office depending on their work location. IT setup usually happens during the first week via a guided onboarding call.\n\nConstraints: Direct them to the correct escalation point (onboarding coordinator or IT helpdesk) if their situation isn't standard and keep the response under 150 words\n\nTone: Helpful, professional and reassuring\n\nOutput format: A short chat-style reply (2–4 sentences or a brief sentence + 2-3 bullet points), ending with an offer to help further or a pointer to a contact.",
+  "lab1_output_met_constraints": true,
+  "lab1_extra_scenarios_done": 1,
+  "lab2_problem": "Galaxy Buds distribution centre — shipment/hold/restock",
+  "lab2_naive_output_summary": "4,299 Galaxy Buds units are available for sale by the end of the day is the answer ChatGPT has given. \nThe AI calculated available inventory by starting with 4,200 units, subtracting 850 sent out (3,350), holding back 6% of that remainder (201 units), subtracting the hold-back (3,149), and adding a restock of 1,150",
+  "lab2_cot_prompt": "Samsung starts with 4,200 Galaxy Buds. It ships out 850, then holds 6% of the remaining stock, then restocks 1,150 units. Solve step by step: find units after shipment, then units held, then subtract the hold, then add the restock. Show each step, then give the final answer.",
+  "lab2_cot_output_summary": "4,299 is the number that ChatGPT has given but with this prompt it showed each step distinguished from the next and more detailed with its working.",
+  "better_approach": "cot",
+  "stretch_done": true,
+  "stretch_react_prompt": "Samsung starts with 4,200 Galaxy Buds. It ships out 850, then holds 6% of the remaining stock, then restocks 1,150 units. For each step, first state your Thought (what you need to figure out), then state the Action (the specific calculation you'd run), then state the Observation. Repeat this for every step until you reach the final answer, then clearly state the final number of units available for sale.",
+  "tasks_completed": 6,
+  "tasks_total": 6,
+  "submitted_at": "2026-07-14T10:00:35.555Z"
+}
