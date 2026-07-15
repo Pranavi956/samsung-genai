@@ -1,0 +1,20 @@
+{
+  "day": 3,
+  "student_name": "Pranavi Sridhar",
+  "github": "Pranavi956",
+  "ir_hallucination_done": true,
+  "ir_bias_done": true,
+  "ir_guardrail_builder_done": true,
+  "ir_battle_complete": true,
+  "ir_battle_blocked": 8,
+  "ir_battle_total": 8,
+  "rag_scenario": "A",
+  "rag_no_rag_summary": "Model answered correctly but assumed \"typical 12-month warranty, no additional plan\" rather than knowing it from a source. This is common-knowledge territory, so it can't confirm the RAG pipeline is actually grounding vs. just guessing right.",
+  "rag_grounded_summary": "Model answered with more confidence and factually rather than assumptions. The answers converged because the fact pattern is common knowledge. The difference shows up in how each got there not what it concluded.",
+  "rag_judgement": "confirmed_right",
+  "stretch_done": true,
+  "stretch_notes": "Asked the same question: \"which Node version should a new engineer install?\" twice: once with no context (relying on the model's training knowledge), once constrained to a fabricated internal doc stating Node 14.x is required and 18+ is incompatible (a fact that directly contradicts real-world best practice, where 20.x LTS is standard).\nObservation:\n\nNo-context: Model confidently recommended Node 20.x LTS — reasonable in general, wrong for this scenario and fabricated a citation (\"based on the deployment instructions you're referring to\") despite no instructions being given.\nWith-context: Model correctly flipped to Node 14.x, cited the crypto module incompatibility accurately, and didn't override the doc with its own knowledge that 14.x is outdated.\n\nThis is a clean grounding test: the two answers directly contradict each other (14 vs 20), so there's no ambiguity in scoring. It also surfaced a secondary issue the no-context model hallucinated a source reference it didn't have, which is a distinct failure mode worth tracking separately from factual correctness.",
+  "tasks_completed": 6,
+  "tasks_total": 6,
+  "submitted_at": "2026-07-15T09:07:41.028Z"
+}
